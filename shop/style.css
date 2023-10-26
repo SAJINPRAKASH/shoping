@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&display=swap');
+
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'League Spartan', sans-serif;
+
+
+  }
+
+  h1 {
+        font-size: 56px;
+        line-height: 64px;
+        color: black;
+
+  }
+
+  h2 {
+        font-size: 51px;
+        line-height: 54px;
+        color: black;
+
+  }
+
+  h4 {
+        font-size: 26px;
+        color: rgb(54, 54, 54);
+
+  }
+
+h6 {
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+
+p {
+    font-size: 18px;
+    color: rgb(121, 121, 121);
+    margin: 15px 0 20px 0;
+
+}
+.sec-p1{
+      padding: 40px 85px;
+}
+
+
+
+body {
+        width: 100%;
+        
+}
+.logoimg {
+            width: 136px;
+            height: 116px;
+}
+
+#header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3px 80px 3px 40px;
+            background-color: #F8F0E5;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            bottom: 0;
+
+}
+
+#rm {
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+#rm li{
+      list-style: none;
+      padding: 0 20px;
+      position: relative;
+}
+#rm li a{
+      text-decoration: none;
+      font-size: 19px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      color: rgb(105, 105, 105);
+      transition: 0.3s ease;
+}
+#rm li a:hover,
+#rm li a.active{
+            color:#bb9074;
+
+}
+#rm li a.active::after,
+#rm li a:hover::after {
+      content: "";
+      width: 30%;
+      height: 2px;
+      background-color: #bb9074;
+      position: absolute;
+      bottom: -4px;
+      left: 20px;
+}

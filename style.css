@@ -1,0 +1,437 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&display=swap');
+
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'League Spartan', sans-serif;
+
+
+  }
+
+  h1 {
+        font-size: 56px;
+        line-height: 64px;
+        color: black;
+
+  }
+
+  h2 {
+        font-size: 51px;
+        line-height: 54px;
+        color: black;
+
+  }
+
+  h4 {
+        font-size: 26px;
+        color: rgb(54, 54, 54);
+
+  }
+
+h6 {
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+
+p {
+    font-size: 18px;
+    color: rgb(121, 121, 121);
+    margin: 15px 0 20px 0;
+
+}
+.sec-p1{
+      padding: 40px 85px;
+}
+
+
+
+body {
+        width: 100%;
+        
+}
+.logoimg {
+            width: 136px;
+            height: 116px;
+}
+
+#header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3px 80px 3px 40px;
+            background-color: #F8F0E5;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            bottom: 0;
+
+}
+
+#rm {
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+#rm li{
+      list-style: none;
+      padding: 0 20px;
+      position: relative;
+}
+#rm li a{
+      text-decoration: none;
+      font-size: 19px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      color: rgb(105, 105, 105);
+      transition: 0.3s ease;
+}
+#rm li a:hover,
+#rm li a.active{
+            color:#bb9074;
+
+}
+#rm li a.active::after,
+#rm li a:hover::after {
+      content: "";
+      width: 30%;
+      height: 2px;
+      background-color: #bb9074;
+      position: absolute;
+      bottom: -4px;
+      left: 20px;
+}
+
+      
+#hero {
+      background-image: url(web/hero4.png);
+      height: 90vh;;
+      width: 100%;
+      background-size: cover;
+      background-position: top 25% right 0;
+      padding: 0 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+
+}
+
+#hero h4{
+      padding-bottom: 15px;
+    
+}
+#hero h1{
+      color: #557e8f;
+
+}
+#hero button {
+      background-image: url(web/fun/button.png);
+      border: 0;
+      background-color:transparent;
+      color:  #557e8f;
+      padding: 14px 80px 18px 80px;
+      font-size: 18px;
+      font-weight: 600;
+      background-repeat: no-repeat;
+      cursor: pointer;
+
+
+}
+
+#feature {
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    
+}
+
+
+#feature .febox{
+      width: 180px;
+      text-align: center;
+      padding: 25px 15px;
+      box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.2);
+      border: 1px solid #766153;
+      border-radius: 5px;
+      margin: 15px 0;
+
+
+
+}
+
+#feature .febox:hover{
+      box-shadow:20px 20px 34px rgba(0, 0, 0, 0.1) ;
+
+
+}
+
+#feature .febox h6{
+      display: inline-block;
+      line-height: 1;
+      background-color: rgb(81, 213, 230);
+      color: #444444;
+      border-radius: 4px;
+      padding: 5px;
+   
+}
+
+#feature .febox img{
+      width: 100%;
+      margin-bottom: 10px;
+
+      
+}
+#feature .febox:nth-child(2) h6{
+      background-color: rgb(189, 121, 180);
+}
+#feature .febox:nth-child(3) h6{
+      background-color: rgb(132, 189, 121);
+}
+#feature .febox:nth-child(4) h6{
+      background-color: rgb(155, 195, 218);
+}
+#feature .febox:nth-child(5) h6{
+      background-color: rgb(160, 121, 231);
+}
+#feature .febox:nth-child(6) h6{
+      background-color: rgb(238, 194, 168);
+}
+
+.product-p1{
+      padding: 55px;
+      text-align: center;
+      cursor: pointer;
+
+      
+
+}
+#product1 .pro{
+      padding: 10px;
+      width: 15%;
+      min-width: 35vh;;
+      border: 1px solid black;
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+#product1 .pro:hover{
+   
+      transition: 0.7s ease;
+
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#proimg{
+      text-align: center;
+      padding: 10px;
+      
+
+}
+
+.pro img{
+     
+      width: 30vh;
+      height: 30vh;
+      border-radius: 20px;
+      border: transparent;
+}
+
+.star img{
+      height: 2vh;
+      width: 2vh;
+}
+
+#addcart {
+      display: block;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: rgb(250, 239, 205);
+
+
+}
+
+#addcart img{
+      margin: 6px;
+      width: 25px;
+      height: 25px;
+      border-radius: 0;
+
+
+}
+
+
+.discription{
+      text-align: start;
+      padding: 11px;
+}
+
+#shopimg{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+}
+
+#baner {
+      margin: 40px 0;
+      background-image: url(web/bn/b2.jpg);
+      height: 50vh;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+
+}
+#baner h4{
+      color: beige;
+      line-height: 50px;
+}
+#baner h2{
+      color: bisque;
+      line-height: 50px;
+}
+#baner h2 span{
+      color: rgb(235, 54, 54);
+}
+#baner button{
+      background-color: rgb(136, 184, 105);
+      border: none;
+      width: 160px;
+      height: 60px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: 400;
+      color: antiquewhite;
+      cursor: pointer;
+      transition: 0.3s ease;
+}
+#baner button:hover{
+      background-color: rgb(179, 137, 76);
+    
+}
+
+
+.foot1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+     
+  
+      
+      
+
+}
+
+#contfoot{
+      background-image: url(web/bn/b17.jpg);
+      width: 40%;
+    
+      height: 40vh;
+      background-repeat: repeat;
+      background-size: cover;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      padding: 25px;
+      margin: 0 35px;
+
+
+}
+#contfoot h5{
+      font-size: 25px;
+      font-weight: 200;
+      color: aliceblue;
+      
+}
+#contfoot h2{
+      color: aliceblue;
+      font-size: 40px;
+      
+}
+#contfoot h6{
+      font-size: 18px;
+      font-weight: 500;
+      color: aliceblue;
+      
+}
+#contfoot button{
+      background-color: rgb(136, 184, 105);
+      border: none;
+      width: 100px;
+      height: 40px;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 8px 0px;
+      color: antiquewhite;
+      cursor: pointer;
+      transition: 0.3s ease;
+}
+
+#contfoot button:hover{
+      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+}
+#contfoot2{
+      background-image: url(web/bn/b10.jpg);
+      width: 40%;
+    
+      height: 40vh;
+      background-repeat: repeat;
+      background-size: cover;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 25px;
+
+}
+#contfoot2 h5{
+      font-size: 25px;
+      font-weight: 200;
+      color: aliceblue;
+      
+}
+#contfoot2 h2{
+      color: aliceblue;
+      font-size: 40px;
+      
+}
+#contfoot2 h6{
+      font-size: 18px;
+      font-weight: 500;
+      color: aliceblue;
+      
+}
+#contfoot2 button{
+      background-color: transparent;
+      border: 1px solid black;
+      width: 100px;
+      height: 40px;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 8px 0px;
+      color: antiquewhite;
+      cursor: pointer;
+      transition: 0.3s ease;
+}
+
+
+
